@@ -2,7 +2,10 @@
 #define MAIN_WINDOW_HPP
 
 #include <QWidget>
-#include "widgets/logo_widget.hpp"
+#include <QCalendarWidget>
+
+#include "widgets/logo.hpp"
+#include "widgets/analog_clock.hpp"
 
 class MainWindow: public QWidget{
   Q_OBJECT
@@ -11,7 +14,8 @@ public:
   MainWindow(QWidget *parent = nullptr);
 
 private:
-  logoWidget logo();
+  logoWidget *logo;
+  analogClock *ac;
 
 };
 

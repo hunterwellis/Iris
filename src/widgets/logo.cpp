@@ -1,4 +1,4 @@
-#include "logo_widget.hpp"
+#include "logo.hpp"
 #include <QVBoxLayout>
 #include <QPixmap>
 #include <QFile>
