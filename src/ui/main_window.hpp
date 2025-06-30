@@ -6,6 +6,7 @@
 
 #include "widgets/logo.hpp"
 #include "widgets/analog_clock.hpp"
+#include "widgets/digital_clock.hpp"
 
 class MainWindow: public QWidget{
   Q_OBJECT
@@ -16,7 +17,7 @@ public:
 private:
   logoWidget *logo;
   analogClock *ac;
-
+  digitalClock *dc;
 };
 
 #endif

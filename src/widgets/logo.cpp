@@ -1,4 +1,5 @@
 #include "logo.hpp"
+
 #include <QVBoxLayout>
 #include <QPixmap>
 #include <QFile>
@@ -17,6 +18,8 @@ logoWidget::logoWidget(QWidget *parent)
     }
 
     layout->addWidget(logoLabel);
+
+    layout->setContentsMargins(0, 0, 0, 0);
     setLayout(layout);
 }
 
