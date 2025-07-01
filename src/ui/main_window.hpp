@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QCalendarWidget>
 
+#include "widgets/habit_tracker.hpp"
 #include "widgets/logo.hpp"
 #include "widgets/analog_clock.hpp"
 #include "widgets/digital_clock.hpp"
@@ -18,6 +19,7 @@ private:
   logoWidget *logo;
   analogClock *ac;
   digitalClock *dc;
+  habitTracker *ht;
 };
 
 #endif
