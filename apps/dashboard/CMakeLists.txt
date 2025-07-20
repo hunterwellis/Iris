@@ -14,18 +14,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(DCMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 file(GLOB_RECURSE UI_SOURCES
-    ui/*.cpp
-    ui/*.hpp
-)
-
-file(GLOB_RECURSE WIDGET_SOURCES
-    widgets/*.cpp
-    widgets/*.hpp
+    include/*.hpp
+    src/*.cpp
 )
 
 # file(GLOB_RECURSE BACKEND_SOURCES)
 
-add_executable(${PROJECT_NAME} main.cpp ${UI_SOURCES} ${WIDGET_SOURCES})
+add_executable(${PROJECT_NAME} main.cpp ${UI_SOURCES})
 
 # Link Qt6 libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE

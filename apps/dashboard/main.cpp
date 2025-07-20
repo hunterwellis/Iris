@@ -1,14 +1,14 @@
 #include <QApplication>
 #include <QDebug>
 
-#include "ui/main_window.hpp"
+#include "include/main_window.hpp"
 
-int main(int argc, char * argv[]){
-    QApplication app(argc, argv);
+int main(int argc, char *argv[]) {
+  QApplication app(argc, argv);
 
-    MainWindow w;
-    w.showFullScreen();
+  MainWindow w;
+  w.setCursor(Qt::BlankCursor);
+  w.showFullScreen();
 
-    return app.exec();
+  return app.exec();
 }
-

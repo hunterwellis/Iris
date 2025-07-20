@@ -1,8 +1,8 @@
 #include <QLayout>
 #include <QtWidgets>
 
-#include "main_window.hpp"
-#include "widgets/habit_tracker.hpp"
+#include "include/main_window.hpp"
+#include "include/widgets/habit_tracker.hpp"
 
 typedef int row, col, rowspan, colspan;
 

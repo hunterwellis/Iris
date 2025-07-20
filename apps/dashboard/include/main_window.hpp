@@ -4,10 +4,10 @@
 #include <QCalendarWidget>
 #include <QWidget>
 
-#include "widgets/analog_clock.hpp"
-#include "widgets/digital_clock.hpp"
-#include "widgets/habit_tracker.hpp"
-#include "widgets/logo.hpp"
+#include "include/widgets/analog_clock.hpp"
+#include "include/widgets/digital_clock.hpp"
+#include "include/widgets/habit_tracker.hpp"
+#include "include/widgets/logo.hpp"
 
 class MainWindow : public QWidget {
   Q_OBJECT
