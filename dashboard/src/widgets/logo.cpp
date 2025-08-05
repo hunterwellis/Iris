@@ -4,8 +4,8 @@
 #include <QPixmap>
 #include <QVBoxLayout>
 
-logoWidget::logoWidget(QWidget *parent)
-    : QWidget(parent), logoLabel(new QLabel(this)) {
+logoWidget::logoWidget()
+    : QWidget(nullptr), logoLabel(new QLabel(this)) {
 
   auto *layout = new QVBoxLayout(this);
   logoLabel->setAlignment(Qt::AlignCenter);

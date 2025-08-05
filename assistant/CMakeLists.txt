@@ -13,6 +13,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(DCMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+set(ENTRY_POINT src/main.cpp)
+
 file(GLOB_RECURSE UI_SOURCES
     include/*.hpp
     src/*.cpp
@@ -20,7 +22,7 @@ file(GLOB_RECURSE UI_SOURCES
 
 # file(GLOB_RECURSE BACKEND_SOURCES)
 
-add_executable(${PROJECT_NAME} main.cpp ${UI_SOURCES})
+add_executable(${PROJECT_NAME} ${ENTRY_POINT} ${UI_SOURCES})
 
 # Link Qt6 libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE

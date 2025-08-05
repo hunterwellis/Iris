@@ -4,8 +4,8 @@
 #include <QPainter>
 #include <qnamespace.h>
 
-habitTracker::habitTracker(QString habitTitle, QWidget *parent)
-    : QWidget(parent), data(cols, QVector<int>(rows, 0)),
+habitTracker::habitTracker(QString habitTitle)
+    : QWidget(nullptr), data(cols, QVector<int>(rows, 0)),
       startDate(QDate::currentDate().addDays(-364)) {
   header = habitTitle;
   setMinimumSize(150, 150);

@@ -10,7 +10,7 @@ class habitTracker: public QWidget {
     Q_OBJECT
 
 public:
-    explicit habitTracker(QString habitTitle, QWidget *parent = nullptr);
+    explicit habitTracker(QString habitTitle);
     QSize sizeHint() const override;
 
 protected:

@@ -11,7 +11,7 @@ class analogClock : public QWidget
     Q_OBJECT
 
 public:
-    analogClock(QWidget *parent = nullptr);
+    explicit analogClock();
 
 protected:
     void paintEvent(QPaintEvent *event) override;

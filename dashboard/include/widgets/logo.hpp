@@ -8,7 +8,7 @@ class logoWidget : public QWidget {
     Q_OBJECT
 
 public:
-    explicit logoWidget(QWidget *parent = nullptr);
+    explicit logoWidget();
 
 private:
     QLabel *logoLabel;

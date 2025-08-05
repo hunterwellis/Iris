@@ -8,7 +8,7 @@
 #include <QTimer>
 #include <qnamespace.h>
 
-analogClock::analogClock(QWidget *parent) : QWidget(parent) {
+analogClock::analogClock() : QWidget(nullptr) {
   QTimer *timer = new QTimer(this);
   connect(timer, &QTimer::timeout, this, QOverload<>::of(&analogClock::update));
   timer->start(1000);
